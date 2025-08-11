@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Word Counter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-microphone-alt"></i>
+            </div>
+            <h1>Real-Time Word Counter</h1>
+            <p class="subtitle">Listen • Count • Analyze</p>
+        </div>
+        
+        <div class="input-section">
+            <div class="input-wrapper">
+                <label for="targetWord">
+                    <i class="fas fa-search"></i>
+                    Words to count (separate with commas):
+                </label>
+                <input type="text" id="targetWord" placeholder="hello, world, test..." value="hello, world">
+                <div class="input-icon">
+                    <i class="fas fa-keyboard"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="startBtn" class="btn btn-primary">
+                <i class="fas fa-play"></i>
+                Start Listening
+            </button>
+            <button id="stopBtn" class="btn btn-secondary" disabled>
+                <i class="fas fa-stop"></i>
+                Stop Listening
+            </button>
+            <button id="resetBtn" class="btn btn-reset">
+                <i class="fas fa-redo"></i>
+                Reset All Counters
+            </button>
+        </div>
+        
+        <div class="status">
+            <div class="status-icon">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <div id="statusText" class="status-text">Click "Start Listening" to begin</div>
+            <div id="confidence" class="confidence"></div>
+        </div>
+        
+        <div class="counters-section">
+            <div class="counters-header">
+                <i class="fas fa-chart-bar"></i>
+                <span>Word Counters</span>
+            </div>
+            <div id="counters" class="counters">
+                <!-- Counters will be dynamically generated here -->
+            </div>
+        </div>
+        
+        <div class="transcript-section">
+            <div class="section-header">
+                <i class="fas fa-file-alt"></i>
+                <h3>Live Transcript</h3>
+            </div>
+            <div id="transcript" class="transcript"></div>
+        </div>
+        
+        <div class="info">
+            <div class="info-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <p><strong>Pro Tip:</strong> Speak clearly and the app will count how many times you say the specified word! Perfect for language learning, speech therapy, or just having fun.</p>
+        </div>
+        
+        <div class="footer">
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Real-time</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Privacy First</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile Ready</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 
