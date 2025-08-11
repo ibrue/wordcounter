@@ -1,8 +1,8 @@
-# 🎤 Real-Time Word Counter
+# Word Counter
 
 A web application that listens to speech in real-time and counts how many times a specified word is spoken.
 
-## ✨ Features
+## Features
 
 - **Real-time speech recognition** using the Web Speech API
 - **Live word counting** with visual feedback
@@ -12,7 +12,7 @@ A web application that listens to speech in real-time and counts how many times 
 - **Responsive design** that works on all devices
 - **Modern UI** with smooth animations
 
-## 🚀 How to Use
+## How to Use
 
 1. **Open the app** in a modern web browser (Chrome, Edge, Safari recommended)
 2. **Enter a word** you want to count in the input field
@@ -22,14 +22,14 @@ A web application that listens to speech in real-time and counts how many times 
 6. **Stop listening** when you're done
 7. **Reset the counter** to start over
 
-## 🛠️ Technical Details
+## 🛠Technical Details
 
 - **Frontend**: HTML5, CSS3, JavaScript (ES6+)
 - **Speech Recognition**: Web Speech API (webkitSpeechRecognition)
 - **Browser Support**: Chrome, Edge, Safari (requires HTTPS in production)
 - **No external dependencies** - runs entirely in the browser
 
-## 📱 Browser Compatibility
+## Browser Compatibility
 
 | Browser | Support | Notes |
 |---------|---------|-------|
@@ -38,14 +38,14 @@ A web application that listens to speech in real-time and counts how many times 
 | Safari | ✅ Full | iOS 14.5+ |
 | Firefox | ❌ None | No Web Speech API support |
 
-## 🔧 Setup
+## Setup
 
 1. Clone or download the files
 2. Open `index.html` in a supported browser
 3. Allow microphone access when prompted
 4. Start speaking!
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Language learning** - Count specific vocabulary words
 - **Speech therapy** - Track word frequency in practice sessions
@@ -53,7 +53,7 @@ A web application that listens to speech in real-time and counts how many times 
 - **Research** - Analyze speech patterns
 - **Fun** - Challenge friends to say a word multiple times
 
-## ⚠️ Important Notes
+## Important Notes
 
 - **Microphone permission** is required for speech recognition
 - **HTTPS is recommended** for production use (required by some browsers)
@@ -61,7 +61,7 @@ A web application that listens to speech in real-time and counts how many times 
 - **Background noise** may affect accuracy
 - **Browser compatibility** varies - Chrome provides the best experience
 
-## 🎨 Customization
+## Customization
 
 The app is easily customizable:
 
@@ -70,7 +70,7 @@ The app is easily customizable:
 - **UI elements**: Adjust the HTML structure in `index.html`
 - **Recognition settings**: Modify parameters in the JavaScript code
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Speech recognition not working?**
 - Check browser compatibility
